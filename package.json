@@ -1,5 +1,5 @@
 {
-  "name": "verkefni8",
+  "name": "vef1-2024-v8",
   "version": "1.0.0",
   "main": "scripts.js",
   "scripts": {
@@ -7,7 +7,7 @@
     "copy:html": "cpy ./*.html ./build/",   
     "copy:js": "cpy ./scripts.js ./build/",       
     "copy:css": "cpy ./*.css ./build/",     
-    "build": "concurrently npm:copy:*", 
+    "build": "npm run copy:html && npm run copy:js && npm run copy:css", 
     "lint": "eslint ."                      
   },
   "keywords": [],
